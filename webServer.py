@@ -52,7 +52,7 @@ login_manager.init_app(app)
 client = WebApplicationClient(GOOGLE_CLIENT_ID)
 
 # Connect to Database and create database session
-engine = create_engine('sqlite:///categoryitems.db',
+engine = create_engine('sqlite://///var/www/ItemCatalog/categoryitems.db',
                        connect_args={'check_same_thread': False})
 Base.metadata.bind = engine
 
